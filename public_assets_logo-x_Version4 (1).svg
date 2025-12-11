@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo DatoCuriosoX</title>
+  <desc id="desc">Icono con una X central estilizada y elementos financieros (flecha ascendente) integrados.</desc>
+
+  <!-- Fondo con sutil degradado rojo (coincide con el accent de la web) -->
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff6b6b"/>
+      <stop offset="1" stop-color="#ff3b3b"/>
+    </linearGradient>
+    <filter id="f" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="8" y="8" width="240" height="240" rx="36" ry="36" fill="url(#g)" filter="url(#f)"/>
+
+  <!-- X central: dos barras diagonales que forman la X, con recortes para un aspecto moderno -->
+  <g fill="#fff" transform="translate(0,0)">
+    <path d="M76 56 L128 120 L180 56 L200 76 L148 140 L200 204 L180 224 L128 160 L76 224 L56 204 L108 140 L56 76 Z" fill="#ffffff"/>
+    <!-- Aplicamos opacidad para darle textura, el X sigue siendo el foco -->
+    <path d="M76 56 L128 120 L180 56 L200 76 L148 140 L200 204 L180 224 L128 160 L76 224 L56 204 L108 140 L56 76 Z" fill="#071022" opacity="0.06"/>
+  </g>
+
+  <!-- Elemento financiero: pequeña flecha ascendente integrada en la esquina superior derecha de la X -->
+  <g transform="translate(144,40) rotate(10)">
+    <rect x="0" y="40" width="8" height="40" rx="2" fill="#071022" opacity="0.12"/>
+    <rect x="12" y="28" width="8" height="52" rx="2" fill="#071022" opacity="0.18"/>
+    <rect x="24" y="12" width="8" height="68" rx="2" fill="#071022" opacity="0.24"/>
+    <path d="M40 8 L56 8 L56 24 L66 24 L48 44 L30 24 L40 24 Z" fill="#071022" opacity="0.22"/>
+  </g>
+
+  <!-- Pequeño borde interior para contraste -->
+  <rect x="20" y="20" width="216" height="216" rx="28" ry="28" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+
+</svg>
